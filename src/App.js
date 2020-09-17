@@ -1,11 +1,13 @@
 import React from "react";
 import "./App.css";
-import { BrowserRouter as Router, Switch, Route, Link } from "react-router-dom";
+import { Switch, Route } from "react-router-dom";
 
 //Pagess
 import HomePage from "./pages/HomePage";
 import ErrorPage from "./pages/ErrorPage";
 import AboutPage from "./pages/AboutPage";
+import BlogPage from "./pages/BlogPage";
+import WorkPage from "./pages/WorkPage";
 
 function App() {
   return (
@@ -13,6 +15,8 @@ function App() {
       <Switch>
         <Route exact path="/" component={HomePage} />
         <Route exact path="/About" component={AboutPage} />
+        <Route exact path="/Work" component={WorkPage} />
+        <Route exact path="/Blog" component={BlogPage} />
         <Route component={ErrorPage} />
       </Switch>
     </div>
