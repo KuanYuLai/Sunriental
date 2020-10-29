@@ -59,11 +59,8 @@ const Title = styled.div`
 const Content = styled.div`
   width: 50%;
   color: #ad9677;
-  text-align; justify;
+  text-align: justify;
   font-size: 100%;
-  a{
-    margin: 0 3%;
-  }
 `;
 
 class AboutPage extends Component {
@@ -96,7 +93,7 @@ class AboutPage extends Component {
               nec tristique velit. Vivamus.
             </p>
             <a > Contact </a>
-            <a> sunriental@gmail.com / @sunriental </a>
+            <a style={{float: "right"}}> sunriental@gmail.com / @sunriental </a>
           </Content>
         </Description>
         <Member>

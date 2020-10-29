@@ -8,6 +8,7 @@ import ErrorPage from "./pages/ErrorPage";
 import AboutPage from "./pages/AboutPage";
 import BlogPage from "./pages/BlogPage";
 import WorkPage from "./pages/WorkPage";
+import ProfileCard from "./components/ProfileCard";
 
 function App() {
   return (
@@ -17,6 +18,7 @@ function App() {
         <Route exact path="/About" component={AboutPage} />
         <Route exact path="/Work" component={WorkPage} />
         <Route exact path="/Blog" component={BlogPage} />
+        <Route exact path="/dev" component={ProfileCard} />
         <Route component={ErrorPage} />
       </Switch>
     </div>
